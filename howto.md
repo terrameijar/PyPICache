@@ -1,6 +1,6 @@
 # Start `pypiserver` at boot
 
-To ensure that `pypiserver` software starts up automatically at boot, create a new Linux service and use systemd to manage it.
+To ensure that `pypiserver` software starts up automatically at boot, create a new Linux service and use `systemd` to manage it.
 
 1. Create a start up script that the service will manage, call it `start-pypi-server.sh`. Add the following content to it:
 
