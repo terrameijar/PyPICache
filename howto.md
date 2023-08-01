@@ -18,8 +18,8 @@ sudo chmod +x /usr/bin/start-pypi-server.sh
 
 3. Create a unit file to define a systemd service. Name it pypiserver.service:
 
-```shell
 
+```shell
 GNU nano 3.2         /lib/systemd/system/pypiserver.service                  
  
 [Unit]
@@ -39,7 +39,6 @@ This defines a basic service. The `ExecStart` directive specifies the command th
 4. Copy the unit file to `/etc/systemd/system` and give it permissions:
 
 ```shell
-
 sudo cp pypiserver.service /etc/systemd/system/pypiserver.service
 sudo chmod 644 /etc/systemd/system/pypiserver.service
 ```
@@ -55,9 +54,7 @@ sudo systemctl start pypiserver
 2. Check the status of the pypiserver service:
 
 ```shell
-
 sudo systemctl status pypiserver
-
 ```
 
 This will produce output similar to this:
@@ -88,5 +85,4 @@ sudo systemctl restart pypiserver
 
 ```shell
 sudo systemctl enable pypiserver
-
 ```
